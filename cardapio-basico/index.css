@@ -1,0 +1,46 @@
+.cardapio {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: #fffefa;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  font-family: 'Arial', sans-serif;
+}
+
+.titulo-categoria {
+  margin-top: 30px;
+  color: #aa3e3e;
+  font-size: 22px;
+  border-bottom: 1px solid #e5c1c1;
+  padding-bottom: 5px;
+}
+
+.cardapio ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cardapio li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.banner {
+  background: linear-gradient(90deg, #fff0f0, #ffe8e8);
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.banner h1 {
+  font-size: 26px;
+  color: #a83838;
+}
+
+.banner a {
+  text-decoration: none;
+  color: #a83838;
+  font-weight: bold;
+}

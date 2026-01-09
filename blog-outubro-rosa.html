@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/blog.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Outubro Rosa: Conscientização e Presença Digital</title>
+    <link rel="icon" href="src/assets/Logotipo-site.jpg" type="image/png" sizes="32x32">
+    <meta name="description" content="Outubro Rosa e presença digital: inspire-se em ideias criativas para engajar seu público e dar visibilidade à sua marca e à prevenção.">
+    <meta name="keywords" content="Outubro Rosa, conscientização, marketing digital, campanhas sociais, presença online, visibilidade da marca, Seu Site Sua Cara">
+    <meta name="author" content="Seu Site Sua Cara">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Michele Santo",
+            "url": "https://www.seusitesuacara.com",
+            "logo": "https://www.seusitesuacara.com/favicon.png"
+            
+        }
+    </script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  
+</head>
+<body>
+  <div class="modal fade" id="modalFormulario" tabindex="-1" aria-labelledby="modalFormularioLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalFormularioLabel">🚀 Blog - Outubro Rosa <span id="pacote-selecionado" class="text-danger"></span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Preencha seus dados para receber nossa proposta completa e o contato de um consultor.</p>
+        
+        <form id="form-pacotes" action="https://formsubmit.co/contato@seusitesuacara.com" method="POST">
+          
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome Completo</label>
+            <input type="text" class="form-control" id="nome" name="Nome" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" name="Email" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="telefone" class="form-label">Telefone (WhatsApp)</label>
+            <input type="tel" class="form-control" id="telefone" name="Telefone" placeholder="(XX) XXXXX-XXXX" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="mensagem" class="form-label">Sua Mensagem</label>
+            <textarea class="form-control" id="mensagem" name="Mensagem" rows="3"></textarea>
+          </div>
+          
+          <input type="hidden" id="pacote" name="Pacote Escolhido" value="">
+          
+          <button type="submit" class="btn btn-success w-100 mt-3">Enviar e Receber Proposta</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="index.html">
+      <img src="src/assets/Logotipo-site.jpg" width="85" height="85" alt="Seu Site, Sua Cara">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1"
+      id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+        <button type="button" class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="titulo-pagina">
+    <h1>Mais do que uma cor: o Outubro Rosa e a importância de ser visível</h1>
+</header>
+  
+<!--Pacotes-->
+<article id="pacotes" class="py-5">
+    <h1 class="text-center mb-5">Outubro Rosa e presença digital: inspire-se para cuidar da sua marca e da sua saúde </h1>
+    
+    <div class="row justify-content-center">
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body" data-aos="fade-left">
+                    <h1 class="card-title text-primary">✨ Mais do que uma cor: Outubro Rosa e a importância de se fazer visível</h1>
+                    <p>O mês de outubro chega e, com ele, a cor rosa toma conta das fachadas, dos laços e das redes sociais. Mas o Outubro Rosa é muito mais do que uma tendência visual. É um lembrete poderoso de que a prevenção e a conscientização salvam vidas. Para nós, do SeuSiteSuaCara.com, que entendemos a importância de uma presença marcante na internet, essa campanha é um eco: assim como sua marca precisa ser vista, a sua saúde também merece visibilidade e atenção.</p>
+                    <ul>
+                        <li><strong>A conexão entre online e offline: </strong>Crie uma analogia entre a sua presença digital e a saúde. Assim como você investe em um site otimizado para que seu público o encontre, invista em exames de rotina para que qualquer alteração seja encontrada a tempo.</li>
+                        <li><strong>O poder da informação: </strong>A internet é uma ferramenta de busca, mas também de desinformação. O artigo pode destacar a importância de usar a presença digital para compartilhar informações corretas e confiáveis sobre o Outubro Rosa.</li>
+                        <li><strong>Seu negócio engajado: </strong>Mostre como sua empresa se engaja com a causa, talvez com a iluminação do escritório, doações ou a promoção de conversas internas sobre o assunto.</li>
+                    </ul>
+                    
+                    <p class="card-text">Assim como cuidamos da sua presença online, queremos inspirar você a cuidar da sua saúde. Compartilhe este post e ajude a espalhar essa mensagem poderosa!</p>
+                </div>
+                <div class="card-footer text-center bg-success">
+                    <a href="#" 
+                       class="btn btn-light text-success w-100"
+                       data-bs-toggle="modal" 
+                       data-bs-target="#modalFormulario"
+                       data-pacote="Quero apoiar essa causa com minha marca!">
+                        <i class="bi bi-chat-dots-fill"></i> Quero apoiar essa causa com minha marca!
+                    </a>
+                </div>
+            </div> 
+          </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 border border-danger">
+                <div class="card-body" data-aos="fade-left">
+                    <h1 class="card-title text-danger">Sua marca e o Outubro Rosa: 5 ideias para uma campanha digital que realmente engaja</h1>
+                    <p>O Outubro Rosa é uma oportunidade valiosa para fortalecer o relacionamento da sua marca com o público, mostrando que ela se importa com causas importantes. Mas como fazer isso de forma autêntica e impactante, sem parecer oportunista? Nós, que vivemos de estratégia digital, separamos 5 ideias criativas para a sua campanha.</p>
+                    <ul>
+                        <li><strong>Ideia 1: Conteúdo que educa: </strong>Publique posts com informações úteis sobre a prevenção do câncer de mama, como a importância do autoexame e da mamografia. Use infográficos e carrosséis para tornar a informação mais digerível.</li>
+                        <li><strong>Ideia 2: Histórias reais: </strong>Se tiver a permissão de clientes ou colaboradoras, compartilhe histórias de superação. A conexão humana é o motor do engajamento.</li>
+                        <li><strong>Ideia 3: Ação social visível: </strong>Mostre que seu negócio está fazendo mais do que apenas falar sobre o Outubro Rosa. Doe parte das vendas para ONGs, faça parceria com influenciadoras da causa ou promova eventos beneficentes virtuais.</li>
+                        <li><strong>Ideia 4: O poder da comunidade: </strong>Incentive seu público a compartilhar histórias e dicas nos comentários. Crie uma hashtag exclusiva para a sua campanha.</li>
+                        <li><strong>Ideia 5: Oferta consciente: </strong>Ofereça um desconto em um serviço ou produto e anuncie que uma porcentagem do valor será revertida para uma instituição de apoio.</li>
+                    </ul>
+            
+                    <p class="card-text">Quer ajuda para colocar essas ideias em prática? Nossa equipe de especialistas está pronta para criar uma campanha de Outubro Rosa com a cara da sua marca. Fale conosco!</p>
+                    
+                </div>
+                <div class="card-footer text-center bg-success">
+                    <a href="#" 
+                       class="btn btn-light text-success w-100"
+                       data-bs-toggle="modal" 
+                       data-bs-target="#modalFormulario"
+                       data-pacote="Quero minha campanha de Outubro Rosa!">
+                        <i class="bi bi-chat-dots-fill"></i> Quero minha campanha de Outubro Rosa!
+                    </a>
+                </div>
+            </div> 
+          </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 border border-success">
+                <div class="card-body" data-aos="fade-left">
+                    <h1 class="card-title text-success">Conscientização e conversão: como o Outubro Rosa pode impulsionar seu negócio e sua marca</h1>
+                    <p>Um negócio de sucesso não é feito apenas de números, mas de propósito. Engajar-se com o Outubro Rosa não é apenas uma obrigação moral, mas uma estratégia que humaniza sua marca e constrói uma conexão profunda com seu público. Neste artigo, vamos mostrar como você pode usar o poder do Outubro Rosa para gerar valor para a sua comunidade e para o seu negócio.</p>
+                    <ul>
+                        <li><strong>Construa autoridade: </strong>Ao educar o seu público sobre a causa, você se posiciona como uma marca informada e confiável. Essa credibilidade se estende para seus produtos e serviços.</li>
+                        <li><strong>Aumente o engajamento: </strong>Campanhas sociais como o Outubro Rosa tendem a ter mais engajamento do que posts comuns. Use a emoção e a relevância da causa para aumentar o alcance e o impacto das suas postagens.</li>
+                        <li><strong>Diferencie-se da concorrência: </strong>Enquanto outras empresas apenas compartilham uma imagem rosa, a sua pode ir além, com ações concretas e uma comunicação envolvente. Isso faz com que a sua marca se destaque.</li>
+                        <li><strong>Aumente a base de clientes:</strong>Uma campanha autêntica e bem-executada pode atrair um público que valoriza empresas com propósito.</li>
+                    </ul>
+       
+                    <p class="card-text">Sua marca tem a chance de brilhar com uma causa nobre. Deixe a gente cuidar da sua comunicação digital e transforme o seu site em uma plataforma de impacto. Agende uma consultoria gratuita e veja como podemos fazer a diferença juntos!</p>
+                    
+                </div>
+                <div class="card-footer text-center bg-success">
+                    <a href="#" 
+                       class="btn btn-light text-success w-100"
+                       data-bs-toggle="modal" 
+                       data-bs-target="#modalFormulario"
+                       data-pacote="Quero transformar minha marca com propósito!">
+                        <i class="bi bi-chat-dots-fill"></i> Quero transformar minha marca com propósito!
+                    </a>
+                </div>
+            </div> 
+          </div>
+
+    </div>
+</article>
+
+<article>
+  <!-- MURINHO DE RECADOS - DISQUS -->
+          <div class="murinho-comentarios mt-4">
+            <h5>💬 Murinho de Recados</h5>
+            <p>Me conta o que achou ou o que gostaria de ver! Faça seu comentário! 👇</p>
+            <div class="centralizar">
+              <form action="https://formsubmit.co/contato@seusitesuacara.com" method="POST">
+              <label for="nome">Seu nome:</label><br>
+              <input type="text" name="nome" required><br><br>
+              <label for="comentario">Comentário ou dúvida:</label><br>
+              <textarea name="mensagem" rows="5" required></textarea><br><br>
+              <button type="submit">Enviar comentário </button>
+              <!-- Proteção contra SPAM -->
+               <input type="hidden" name="_captcha" value="false">
+               <input type="hidden" name="_subject" value="Novo comentário do site">
+            </form>
+            <br>
+            </div>
+            
+
+            
+            <div class="recado">
+              <p>Amei a forma como vocês ligaram o Outubro Rosa com a visibilidade da marca! 💡 Nunca tinha pensado que cuidar da saúde também é uma forma de se fazer visível.</p>
+              <small>@carolinadias</small>
+            </div><br>
+            
+            <div class="recado">
+              <p>Sou designer e achei incrível a ideia de criar campanhas com propósito. Faz toda diferença quando o marketing também inspira.</p>
+              <small>@joaomarquesdigital</small>
+            </div><br>
+            <div class="recado">
+              <p>Esse artigo me fez refletir: a gente se preocupa tanto em divulgar o negócio e às vezes esquece de olhar pra nós mesmas. Obrigada pela lembrança! 💕</p>
+              <small>@mariaempreende</small>
+             </div><br>
+
+             <div class="recado">
+              <p>Adorei as ideias de campanha! Já quero aplicar na página da minha loja. Engajamento com causa é o tipo de conteúdo que toca as pessoas 💪</p>
+              <small>@nathfreitas</small>
+            </div><br>
+
+            <div class="recado">
+              <p>Muito bom ver um site de marketing falando de saúde e empatia. Mostra que o digital pode ir além das vendas. 👏</p>
+              <small>@rafaeltech</small>
+            </div><br>
+
+            <div class="recado">
+              <p>Fiz meus exames esse mês e fiquei feliz em ver mais marcas falando sobre o Outubro Rosa. Informação salva vidas e campanhas assim ajudam muito!</p>
+              <small>🎗 @claurosa</small>
+            </div><br>
+          </div>
+          <!-- FIM DO MURINHO -->
+</article>
+
+    <!--Rodapé-->
+
+    <footer class="footer">
+      <script src="scripts.js"></script>
+    </footer>
+    
+
+    <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // tempo da animação
+    once: true,     // anima só uma vez
+  });
+</script>
+
+<script>
+  const form = document.querySelector("form");
+  form.addEventListener("submit", function () {
+    setTimeout(() => {
+      form.reset(); // limpa os campos
+    }, 100); // pequeno atraso para garantir que o envio ocorra antes de limpar
+  });
+</script>
+<!--RD -->
+<script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/5521224c-473e-4189-bf53-2e4dbcdea435-loader.js" ></script>
+
+
+</body>
+</html>

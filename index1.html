@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <title>Sites personalizado e Soluções digitais em Itupeva-SP| Seu site sua cara</title>
+    <link rel="icon" href="src/assets/Logotipo-site.jpg" type="image/png" sizes="32x32">
+    <meta name="description" content="Criação de Sites profissionais com foco em resultados. Tenha um site que atrai clientes e valoriza sua marca. Solicite seu projeto agora!">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Seu Site, Sua Cara",
+  "url": "https://www.seusitesuacara.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.seusitesuacara.com/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+    
+    
+
+    <!--Googel AdSense-->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8948111503282096"
+     crossorigin="anonymous"></script>
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6TX72Y2BHT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6TX72Y2BHT');
+</script>
+</head>
+<body>
+  <!--Botão flutuate agendamento whatsapp-->
+    <a id="btn-whatsapp-flutuante"href="https://wa.me/5511971128269?text=Ol%C3%A1!%20Quero%20Solicitar%20uma%20Or%C3%A7amento." target="_blank" class="whatsapp-flutuante"onclick="gtag('event', 'lead_whatsapp', { 'lead_type': 'flutuante' });" >
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="whatsapp" style="width: 24px; margin-right: 8px;">Solicite seu orçamento!
+    </a>
+
+
+  <div class="modal fade" id="modalFormulario" tabindex="-1" aria-labelledby="modalFormularioLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalFormularioLabel">🚀 Tenho Interesse no Pacote: <span id="pacote-selecionado" class="text-danger"></span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Preencha seus dados para receber nossa proposta completa e o contato de um consultor.</p>
+        
+        <form id="form-pacotes" action="https://formsubmit.co/contato@seusitesuacara.com" method="POST">
+          
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome Completo</label>
+            <input type="text" class="form-control" id="nome" name="Nome" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" name="Email" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="telefone" class="form-label">Telefone (WhatsApp)</label>
+            <input type="tel" class="form-control" id="telefone" name="Telefone" placeholder="(XX) XXXXX-XXXX" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="mensagem" class="form-label">Sua Mensagem</label>
+            <textarea class="form-control" id="mensagem" name="Mensagem" rows="3"></textarea>
+          </div>
+          
+          <input type="hidden" id="pacote" name="Pacote Escolhido" value="">
+          
+          <button type="submit" class="btn btn-success w-100 mt-3">Enviar e Receber Proposta</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <img src="src/assets/Logotipo-site.jpg" width="85" height="85" alt="logo site" >
+    <h1 class="navbar-brand">SEU SITE SUA CARA</h1>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Bem Vindo!</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <!--<li class="nav-item"><a class="nav-link active" aria-current="page" href="projeto.html">Projeto</a>
+          </li>-->
+          
+          <li class="nav-item"><a class="nav-link" href="sobre.html">A História da Nossa Marca</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>          
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio-destaque">Portfólio em destaque</a></li>
+          <li class="nav-item"><a class="nav-link" href="e-book.html">Compre já o seu e-book!</a></li>
+          
+      </div>
+    </div>
+  </div>
+</nav>                   
+<!--Texto seja bem vindo-->
+
+<header class="hero-section" data-aos="fade-right">
+  <div class="card mb-3" style="max-width: 640px;">
+  <div class="row g-1">
+    <div class="col-md-3">
+      <img src="src/assets/foto-michele-santo.jpg" class="img-fluid rounded-start" alt="Michele Santo-criação de sites">
+    </div>
+    <div class="col-md-9" data-aos="fade-right">
+      <div class="card-body">
+        <h5 class="card-title">A História da Nossa Marca</h5>
+        <p class="card-text">A Michele Santo - Soluções Digitais, nasceu da paixão por transformar ideias em realidade no mundo online. Por ter identificado o desafio que muitos empreendedores enfrentam, unimos nossa expertise técnica com uma visão estratégica para criar sites que atraem clientes e contam sua história.</p>
+      </div><br><br>
+      <a href="sobre.html" class="btn btn-primary">Conheça mais sobre a nossa história.</a>
+    </div>
+  </div>
+</div>
+</header>
+
+<div class="hero-content" data-aos="fade-right">
+    <div class="profile-text">
+      <h1 class="profile-name">Transforme sua paixão em uma presença digital inesquecível.</h1>
+      <h2>Criamos sites que atraem clientes, contam sua história e fortalecem sua marca.</h2>
+</div>
+
+<main>
+    <section class="hero-servicos text-center py-5" >
+        <div class="container" data-aos="fade-up">
+            <h1 class="hero-title mt-4">Soluções digitais que fortalecem a sua marca. Seu site é a sua voz.</h1>
+            <p class="lead">Oferecemos soluções completas e acessíveis para a sua jornada digital. É hora de transformar sua ideia em um site de sucesso.</p>
+        </div>
+    </section>
+</main>
+<section class="problema-solucao container my-5">
+    <div class="row">
+        <div class="col-md-6" data-aos="fade-right">
+            <h2>Cansado de ter um site que não gera resultados?</h2>
+            <p>Sabemos que começar pode ser desafiador. Sites genéricos ou a falta de visibilidade online podem ser um grande obstáculo. Mas a sua marca merece brilhar.</p>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+            <h2>A solução é uma presença online de destaque</h2>
+            <p>Nossos pacotes foram pensados para transformar sua paixão em um site que atrai clientes e gera resultados. Com design estratégico e suporte dedicado, sua marca alcançará novos patamares</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="servicos-header" class="text-center my-5">
+    <div class="container">
+        <!-- Título principal da seção de serviços -->
+        <h2 data-aos="fade-up">Pacotes de Presença Online</h2>
+        <!-- Subtítulo mais abrangente e focado no benefício -->
+        <h3 class="text-muted" data-aos="fade-up" data-aos-delay="100">Soluções completas para sua empresa. Onde a sua empresa está na internet?</h3>
+    </div>
+</section>
+
+
+    <!-- Seção de Serviços -->
+<section id="servicos" class="container my-5">
+  <h2 class="text-center mb-4" data-aos="fade-up">💡 Seu negócio em movimento: serviços que dão vida à sua marca</h2>
+  <p class="text-center mb-5" data-aos="fade-up">Encontre a solução perfeita para a sua jornada digital. É hora de dar o próximo passo.</p>
+
+  <div class="row g-4">
+    <!-- Card 1: Criação de Sites -->
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+      <div class="card h-100 shadow-sm text-center servico-card">
+        <div class="card-body">
+          <i class="bi bi-laptop-fill" style="font-size: 2rem; color:#007bff;"></i>
+          <h4 class="card-title mt-3">💻 Crie Sua Base Vendedora</h4>
+          <p class="card-text">Landing Pages e Sites Estáticos com foco em <strong>conversão</strong>. Construímos sua vitrine digital, otimizada para ser a mais rápida da web.</p>
+          <a href="#pacotes" class="btn btn-primary">Ver Pacotes de Sites</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: Tráfego -->
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+      <div class="card h-100 shadow-sm text-center servico-card" style="border: 2px solid #dc3545;">
+        <div class="card-body">
+          <i class="bi bi-rocket-takeoff-fill" style="font-size: 2rem; color:#dc3545;"></i>
+          <h4 class="card-title mt-3 text-danger">🚀 Tráfego Pago & Clientes Imediatos</h4>
+          <p class="card-text">Gestão profissional de anúncios no Google e Redes Sociais. Pare de esperar e <strong>comece a receber leads</strong> amanhã.</p>
+          <a href="#pacotes" class="btn btn-danger">Quero Vender Mais!</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Gestão redes sociais -->
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+      <div class="card h-100 shadow-sm text-center servico-card">
+        <div class="card-body">
+          <i class="bi bi-share-fill" style="font-size: 2rem; color:#17a2b8;"></i>
+          <h4 class="card-title mt-3">📣 Conteúdo e Comunicação Simplificada</h4>
+          <p class="card-text">Gerenciamento de Redes Sociais e Cardápios Digitais. Mantenha seu público engajado e seu atendimento ágil.</p>
+          <a href="#Cardápio Digital" class="btn btn-warning text-white">Ver Soluções Extras</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Pacotes-->
+<article id="pacotes" class="py-5">
+    <h3 class="text-center mb-5">Escolha a Estrutura do Seu Site (Custo Único de Setup)</h3>
+    
+    <div class="row justify-content-center">
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body" data-aos="fade-left">
+                    <h4 class="card-title text-primary">✨ 1. Essencial (Sua LP Vendedora)</h4>
+                    <h6 class="card-title">1 Página (Landing Page)</h6>
+                    <p class="h3 mb-2 text-danger">Pronto para começar?</p>
+                    <p class="h5 mb-4 text-danger">Solicite um Orçamento Personalizado!</p>
+
+                    <p class="card-text">
+                        - Criação da Landing Page personalizada, com design profissional e responsivo.<br>
+                        - Otimização SEO.<br>
+                        - Estrutura pensada para conversão (botões de ação, texto persuasivo e foco no objetivo do cliente).<br>
+                        - Integração com formulários, WhatsApp ou botão de contato direto.<br>
+                        - <strong>HOSPEDAGEM INCLUSA</strong><br>
+                    </p>
+                    <div class="card-modelo">
+                        <a href="confeitaria/index.html" target="_blank" class="btn btn-outline-primary">👀 Ver modelo de LP</a>
+                    </div>
+                </div>
+                <div class="card-footer text-center bg-success">
+                    <a href="#" 
+                       class="btn btn-light text-success w-100"
+                       data-bs-toggle="modal" 
+                       data-bs-target="#modalFormulario"
+                       data-pacote="1. Essencial (Sua LP Vendedora)">
+                        <i class="bi bi-chat-dots-fill"></i> Quero o Pacote Essencial!
+                    </a>
+                </div>
+            </div> 
+          </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 border border-danger">
+                <div class="card-body" data-aos="fade-left">
+                    <h4 class="card-title text-danger">🚀 2. Vendas Rápidas (LP + Tráfego)</h4>
+                    <h6 class="card-title">1 Página (Landing Page)</h6>
+                    <p class="h3 mb-2 text-danger">Pronto para começar?</p>
+                    <p class="h5 mb-4 text-danger">Solicite um Orçamento Personalizado!</p>
+
+                    <p class="card-text">
+                        - Criação da Landing Page personalizada, com design profissional e responsivo.<br>
+                        - Otimização SEO.<br>
+                        - Estrutura pensada para conversão (botões de ação, texto persuasivo e foco no objetivo do cliente).<br>
+                        - Integração com formulários, WhatsApp ou botão de contato direto.<br>
+                        - Motor de Vendas: Foco em textos (Copy) para conversão.<br>
+                        - Tráfego Pago: Gestão de anúncios para gerar leads imediatos.<br>
+                        - Garantia: Velocidade e segurança otimizadas para anúncios.<br>
+                        - <strong>HOSPEDAGEM INCLUSA</strong><br>
+                        <br><small class="text-muted">*(Sugestão de Verba de Mídia: R$ 500/mês)</small>
+                    </p>
+                    <div class="card-modelo">
+                        <a href="confeitaria/index.html" target="_blank" class="btn btn-outline-primary">👀 Ver modelo de LP</a>
+                    </div>
+                </div>
+                <div class="card-footer text-center bg-success">
+                    <a href="#" 
+                       class="btn btn-light text-success w-100"
+                       data-bs-toggle="modal" 
+                       data-bs-target="#modalFormulario"
+                       data-pacote="2. Vendas Rápidas (LP + Tráfego)">
+                        <i class="bi bi-chat-dots-fill"></i> Quero o Pacote de Vendas Rápidas!
+                    </a>
+                </div>
+            </div> 
+          </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 border border-success">
+                <div class="card-body" data-aos="fade-left">
+                    <h4 class="card-title text-success">👑 3. Crescimento Total (Site + Blog + Tráfego)</h4>
+                    <h6 class="card-title">Até 4 Páginas + Estrutura de Blog</h6>
+                    <p class="h3 mb-2 text-danger">Pronto para começar?</p>
+                    <p class="h5 mb-4 text-danger">Solicite um Orçamento Personalizado!</p>
+
+                    <p class="card-text">
+                        - Design profissional e responsivo.<br>
+                        - Integração com formulários, WhatsApp ou botão de contato direto.<br>
+                        - Estrutura Completa: Credibilidade máxima (Home, Sobre, Serviços, Contato).<br>
+                        - SEO Avançado: Otimização para ranquear no Google.<br>
+                        - Conteúdo Recorrente: Publicação de 3 posts de blog/mês.<br>
+                        - <strong>BÔNUS:</strong> 1º Post de Blog no Setup.<br>
+                        - <strong>HOSPEDAGEM INCLUSA</strong><br>
+                        <br><small class="text-muted">*(Sugestão de Verba de Mídia: R$ 800/mês)</small>
+                    </p>
+                    <div class="card-modelo">
+                        <a href="confeitaria-avançado/index.html" target="_blank" class="btn btn-outline-primary">👀 Ver modelo de site</a>
+                    </div>
+                </div>
+                <div class="card-footer text-center bg-success">
+                    <a href="#" 
+                       class="btn btn-light text-success w-100"
+                       data-bs-toggle="modal" 
+                       data-bs-target="#modalFormulario"
+                       data-pacote="Crescimento Total (Site + Blog + Trafego)">
+                        <i class="bi bi-chat-dots-fill"></i> Quero o Pacote Crescimento Total!
+                    </a>
+                </div>
+            </div> 
+          </div>
+
+    </div>
+</article>
+
+<!--Cardapio-->
+<section id="Cardápio Digital" class="mt-5">
+    <div>
+        <h2 data-aos="fade-left">📱 Cardápio Digital: Agilidade no Seu Atendimento</h2>
+        <p class="text-center lead mb-4" data-aos="fade-up">Soluções inteligentes para modernizar seu atendimento com Cardápio Online e QR Code.</p>
+    </div>
+
+    <div id="cardapio" class="p-4 bg-light rounded shadow-sm">
+        <h3 class="mb-4">Escolha o Seu Cardápio (Custo Único de Setup)</h3>
+        
+        <div class="row justify-content-center">
+
+            <div class="col-lg-6 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body" data-aos="fade-left">
+                        <h4 class="card-title">🍽️ Cardápio Essencial (Sem Fotos)</h4>
+                        <p class="h3 mb-2 text-danger">Preço e Proposta</p>
+                        <p class="h5 mb-4 text-danger">Solicite um Orçamento!</p>
+
+                          <ul class="list-unstyled pacote-features">
+                          <li>📄 Design limpo e direto (apenas texto)</li>
+                          <li>📝 Lista de produtos e preços em categorias</li>
+                          <li>🔗 Link e QR Code inclusos</li>
+                          <li>💬 Pedido via WhatsApp integrado</li>
+                          <li>✔️ Até 4 alterações/mês</li>
+                          <li><strong>HOSPEDAGEM INCLUSA</strong></li>
+                        </ul>
+                      </div>
+
+                      <div class="card-modelo">
+                        <a href="cardapio-basico/index.html" target="_blank" class="btn btn-outline-primary">👀 Ver modelo</a>
+                    </div>
+
+                    <div class="card-footer text-center bg-light">
+                        <a href="#" 
+                           class="btn btn-success w-100"
+                           data-bs-toggle="modal" 
+                           data-bs-target="#modalFormulario"
+                           data-pacote="Cardápio Essencial">
+                            <i class="bi bi-chat-dots-fill"></i> Quero o Cardápio Essencial!
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body" data-aos="fade-left">
+                        <h4 class="card-title">📸 Cardápio Profissional (Com Fotos)</h4>
+                        <p class="h3 mb-2 text-danger">Preço e Proposta</p>
+                        <p class="h5 mb-4 text-danger">Solicite um Orçamento!</p>
+                        <ul class="list-unstyled pacote-features">
+                          <li>   Tudo do Essencial, mais:</li>
+                          <li>🖼️ Inclusão de Fotos dos produtos (até 30 itens)</li>
+                          <li>🎨 Cores e fontes personalizadas (Identidade Visual)</li>
+                          <li>✔️ Até 4 alterações/mês</li>
+                          <li>🤝 Suporte prioritário por 15 dias</li>
+                          <li><strong>HOSPEDAGEM INCLUSA</strong></li>
+                        </ul>
+                      </div>
+
+                      <div class="card-modelo">
+                        <a href="cardapio-intermediario/index.html" target="_blank" class="btn btn-outline-primary">👀 Ver modelo</a>
+                    </div>
+                    <div class="card-footer text-center bg-light">
+                        <a href="#" 
+                           class="btn btn-success w-100"
+                           data-bs-toggle="modal" 
+                           data-bs-target="#modalFormulario"
+                           data-pacote="Cardápio Profissional">
+                            <i class="bi bi-chat-dots-fill"></i> Quero o Cardápio Profissional!
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+      </div>
+</section>
+          
+
+<!--Gestão de Redes Sociais-->
+<section id="gestao-redes" class="mt-5 p-4 bg-light" data-aos="fade-left">
+    <div class="container">
+        <h2 class="text-center mb-4">📣 Gestão de Redes Sociais: Conteúdo que Engaja e Vende</h2>
+        <p class="text-center lead mb-4">Alcance seu público com conteúdo estratégico e profissional no Instagram e Facebook.</p>
+        
+        <div class="row justify-content-center">
+
+            <div class="col-lg-6 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">📱 Redes Essenciais (Básico)</h4>
+                        <p class="h3 mb-2 text-primary">Valor e Detalhes:</p>
+                        <p class="h5 mb-4 text-danger">Solicite uma Proposta!</p>
+                        <ul class="list-unstyled pacote-features">
+                          <li>✔️ **8 Posts/Mês** (Feed/Reels/Stories)</li>
+                          <li>✔️ Planejamento e criação de contéudo estratégico</li>
+                          <li>✔️ Copy persuasivo (textos)</li>
+                          <li>✔️ Cronograma mensal</li>
+                          <li>✔️ Relatório básico mensal</li>
+                          <li>✔️ Acompanhamento das publicações</li>
+                          <li>✔️ Suporte via WhatsApp</li>
+                        </ul>
+                        </div>
+                    <div class="card-footer text-center bg-light">
+                        <a href="#" 
+                           class="btn btn-success w-100"
+                           data-bs-toggle="modal" 
+                           data-bs-target="#modalFormulario"
+                           data-pacote="Redes Essenciais (Básico)">
+                            <i class="bi bi-chat-dots-fill"></i> Quero Redes Essenciais!
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 mb-4">
+                <div class="card h-100 border border-info">
+                    <div class="card-body">
+                        <h4 class="card-title">🔥 Redes Avançadas (Conteúdo Frequente)</h4>
+                        <p class="h3 mb-2 text-primary">Valor e Detalhes:</p>
+                        <p class="h5 mb-4 text-danger">Solicite uma Proposta!</p>
+                        <ul class="list-unstyled pacote-features">
+                          <li>✔️ **12 Posts/Mês** (Feed/Reels/Stories)</li>
+                          <li>✔️ Planejamento e criação de contéudo estratégico</li>
+                          <li>✔️ Copy persuasivo (textos)</li>
+                          <li>✔️ Cronograma mensal</li>
+                          <li>✔️ Acompanhamento das publicações</li>
+                          <li>✔️ Monitoramento de Hashtags e interação com o público</li>
+                          <li>✔️ Relatórios de desempenho mensal</li>
+                          <li>✔️ Suporte via WhatsApp</li>
+                        </ul>
+                        </div>
+                    <div class="card-footer text-center bg-light">
+                        <a href="#" 
+                           class="btn btn-success w-100"
+                           data-bs-toggle="modal" 
+                           data-bs-target="#modalFormulario"
+                           data-pacote="Redes Avançadas (Conteúdo Frequente)">
+                            <i class="bi bi-chat-dots-fill"></i> Quero Redes Avançadas!
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 mb-4">
+                <div class="card h-100 border border-info">
+                    <div class="card-body">
+                        <h4 class="card-title">🔥 Tráfego Pago para Redes Sociais</h4>
+                        <p class="h3 mb-2">Fee Mensal: <span class="text-danger">Solicite uma Proposta</span></p>
+                        <ul class="list-unstyled pacote-features">
+                          <li>✔️ **4 Posts/Mês** </li>
+                          <li>✔️ **8 Posts/Mês** </li>
+                          <li>✔️ **12 Posts/Mês** </li>
+                          <li>✔️ Configuração no Gerenciador de Anúncio do Meta (Facebook/Instagram)</li>
+                          ✔️ Configuração no Gerenciador de Anúncio do Tik Tok</li>
+                          <li>✔️ Definição de público-alvo estratégico</li>
+                          <li>✔️ Monitoramento e ajustes de performance das campanhas ativas</li>
+                          <li>✔️ Relatórios básico de desempenho mensal</li>
+                        </ul>
+                        </div>
+                    <div class="card-footer text-center bg-light">
+                        <a href="#" 
+                           class="btn btn-success w-100"
+                           data-bs-toggle="modal" 
+                           data-bs-target="#modalFormulario"
+                           data-pacote="Tráfego para para redes sociais">
+                            <i class="bi bi-chat-dots-fill"></i> Quero um orçamento!
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div> 
+      </div>
+</section>
+
+
+<!-- Seção da forma de pagamento, se quiser manter visível -->
+<section id="forma-pagamento" class="text-center my-3">
+    <div class="container">
+        <div class="d-inline-flex align-items-center p-2 rounded" style="background-color: #f0f0f0;">
+            <p class="m-0 me-3"><strong>Pagamento seguro:</strong> Parcele em até 12X pelo Mercado Pago.</p>
+            <img src="src/assets/mercado-pago-logo.jpg" height="30px" width="30px" alt="Aceitamos Mercado Pago" />
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-4 fw-bold">❓ Perguntas Frequentes</h2>
+            <p class="lead text-muted">Tire suas dúvidas finais sobre nossos serviços antes de iniciar seu projeto.</p>
+        </div>
+
+        <div class="accordion accordion-flush" id="faqAccordion">
+
+            <div class="accordion-item shadow-sm mb-3">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Quanto tempo leva para o meu site ficar pronto?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        O prazo de entrega do seu site é de aproximadamente **7 a 10 dias úteis** após você nos enviar todo o conteúdo necessário (textos, logo, imagens e informações). A agilidade na entrega depende muito da organização do material pelo cliente.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item shadow-sm mb-3">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        O que exatamente está incluído na Recorrência Mensal (R$ 100,00)?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        A recorrência mensal garante o funcionamento e segurança contínua do seu projeto. Inclui: **Hospedagem Premium**, **Domínio**, **Certificado SSL (Segurança)**, **Manutenção Técnica** e **até 4 Alterações de Conteúdo por Mês** (textos, preços e fotos).
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item shadow-sm mb-3">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        O que acontece se eu precisar de mais de 4 alterações no mês?
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Caso as alterações pontuais excedam o limite de 4 por mês, elas serão orçadas e cobradas separadamente, com um valor previamente acordado. Para clientes que necessitam de atualizações diárias ou muito frequentes, podemos discutir um plano de manutenção personalizado.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item shadow-sm mb-3">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Como eu faço para atualizar os preços e produtos do meu Cardápio Digital?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Por ser um desenvolvimento em Front-end, o Cardápio não possui um painel de controle. As atualizações são feitas pela nossa equipe. Basta nos enviar as informações (via WhatsApp ou e-mail) e faremos as alterações, utilizando seu limite de **até 4 alterações de conteúdo por mês**.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item shadow-sm mb-3">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        O que é "Verba de Anúncios" e quem a paga no Tráfego Pago?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        A **Verba de Anúncios** é o valor investido diretamente nas plataformas (Google ou Meta Ads) para que seus anúncios sejam exibidos ao público. Este valor **não está incluso** no Setup ou na Recorrência, sendo de **responsabilidade do cliente**, que define o quanto quer investir por dia/mês.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item shadow-sm mb-3">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        Em quanto tempo terei resultados com o Tráfego Pago?
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        O tráfego (visitas ao site e mensagens) é imediato, começando assim que o anúncio é aprovado. No entanto, o retorno sobre o investimento (ROI) e a otimização das campanhas para gerar vendas efetivas costumam ser alcançados após **1 a 3 meses** de testes e ajustes contínuos.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item shadow-sm mb-3">
+    <h2 class="accordion-header" id="headingThirteen">
+        <button class="accordion-button collapsed fw-bold text-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+            💰 Por que devo pagar a Recorrência Mensal de R$ 150,00? Qual é o custo-benefício?
+        </button>
+    </h2>
+    <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+            O valor não é apenas uma taxa, mas um **investimento contínuo** na performance e segurança do seu negócio. Ele cobre a expertise de ter um profissional cuidando do seu site e inclui:
+            <ul class="mt-3">
+                <li>**Hospedagem de Alta Performance: Servidores otimizados para velocidade e estabilidade.</li>
+                <li>**Segurança Proativa: Monitoramento 24h, backups diários e aplicação imediata de correções de segurança (contra vírus/invasões).</li>
+                <li>**Suporte Prioritário: Resposta rápida em até 4 horas úteis para emergências.</li>
+            </ul>
+            Contratar cada um desses serviços separadamente custaria muito mais, sem a garantia de um único ponto de contato. Com a Recorrência, você tem tranquilidade total.
+        </div>
+    </div>
+</div>
+
+<div class="accordion-item shadow-sm mb-3">
+    <h2 class="accordion-header" id="headingEleven">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+            O domínio do meu site (.com.br) fica registrado no meu nome ou no nome da agência?
+        </button>
+    </h2>
+    <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+            Seu domínio é sempre registrado no **seu nome e CNPJ/CPF**, garantindo que a posse e a marca sejam 100% suas. Nós apenas fazemos a gestão técnica e a renovação anual, inclusas na mensalidade, para que você não precise se preocupar com a data de vencimento.
+        </div>
+    </div>
+</div>
+
+<div class="accordion-item shadow-sm mb-3">
+    <h2 class="accordion-header" id="headingTwelve">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+            Como funciona o suporte técnico em caso de problemas (site fora do ar, erro de segurança)?
+        </button>
+    </h2>
+    <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+            O suporte técnico é prioritário. Em casos de erros críticos (site fora do ar ou problemas de segurança), o tempo de resposta e correção é de **até 4 horas úteis**. Para dúvidas e solicitações de pequenas alterações de conteúdo (as 4 mensais), o prazo de execução é de até 24 horas úteis.
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+
+
+<section id="portfolio-destaque" class="container my-5">
+    <h2 class="text-center mb-5" data-aos="fade-up">🚀 Nossos primeiros passos: Veja nosso trabalho em ação</h2>
+    <p class="text-center lead mb-5" data-aos="fade-up" data-aos-delay="100">Cada projeto, real ou modelo, é uma prova da nossa dedicação em transformar ideias em realidade digital. Conheça a minha jornada.</p>
+
+    <div class="row g-4">
+        <!-- Card 1: Case da Academia MK Fitness -->
+        <div class="col-md-4" data-aos="fade-up">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">Case: Academia MK Fitness</h4>
+                    <p class="card-text">
+                        <strong>O Desafio:</strong> A academia precisava de uma presença online moderna e intuitiva para que os clientes pudessem encontrar informações com facilidade.
+                        <br><br>
+                        <strong>A Solução:</strong> Eu desenvolvi um site com design moderno e navegação simplificada, oferecendo uma experiência mais profissional para os alunos.
+                        <br><br>
+                        <strong>O Resultado:</strong> "Nosso novo site ficou incrível! Agora, nossos clientes encontram todas as informações com facilidade, e o design moderno deixou a experiência muito mais profissional." - Karina Sabrina.
+                    </p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="https://www.academiamkfitness.com/" target="_blank" class="btn btn-outline-primary">Ver Projeto Online</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Case FrontendMichele -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">Case: FrontendMichele</h4>
+                    <p class="card-text">
+                        <strong>O Desafio:</strong> Transformar a paixão pela tecnologia em um projeto que ajuda outros empreendedores a decolarem.
+                        <br><br>
+                        <strong>A Solução:</strong> Eu criei a minha própria plataforma digital para compartilhar conhecimento e demonstrar a minha expertise em desenvolvimento.
+                        <br><br>
+                        <strong>O Resultado:</strong> O @FrontendMichele se tornou a prova viva de que é possível construir uma presença digital sólida do zero, com qualidade e estratégia.
+                    </p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="https://frontendmichele.com/" target="_blank" class="btn btn-outline-primary">Ver Projeto Online</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card 3: Case Seu Site, Sua Cara -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">Case: Seu Site, Sua Cara</h4>
+                    <p class="card-text">
+                        <strong>O Desafio:</strong> Criar uma plataforma que não apenas vendesse serviços, mas que também inspirasse confiança e mostrasse a nossa filosofia de trabalho.
+                        <br><br>
+                        <strong>A Solução:</strong> Nós construímos este site para ser a nossa própria vitrine, utilizando o melhor do design, estratégia e otimização para ser a prova do nosso compromisso.
+                        <br><br>
+                        <strong>O Resultado:</strong> Uma plataforma que representa o nosso valor e que atrai clientes que buscam uma presença digital autêntica.
+                    </p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="https://seusitesuacara.com/" target="_blank" class="btn btn-outline-primary">Ver Projeto Online</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="text-center mt-5" data-aos="zoom-in">
+    <a href="#" 
+       class="btn btn-lg btn-success" 
+       data-bs-toggle="modal" 
+       data-bs-target="#modalFormulario"
+       data-pacote="Orçamento/Proposta Sem Compromisso">
+        Pronto para o seu projeto? Fale comigo!
+    </a>
+</div>
+</section>
+   
+
+    <!--Rodapé-->
+
+    <footer class="footer">
+      <script src="scripts.js"></script>
+      
+      <a href="https://www.instagram.com/frontendmichele" target="_blank" rel="noopener noreferrer"
+     onclick="gtag('event', 'clique_instagram', {
+       'event_category': 'redes_sociais',
+       'event_label': 'Instagram'
+     });"
+     class="btn btn-outline-light d-inline-flex align-items-center mb-3">
+     
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" 
+         alt="Instagram" width="20" style="margin-right: 8px;">
+    Siga no Instagram
+  </a>
+  <a href="politica.html">Política de Privacidade</a>
+
+    </footer>
+
+     
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+
+    <div style="
+  position: absolute;
+  margin-bottom: 10px;
+  margin: 5px 10px;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  font-size: 0.70rem;
+  font-weight: 500;
+  z-index: 9999;
+">💻 Site criado por<strong> Michele Santo</strong>
+  
+  <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // tempo da animação
+    once: true,     // anima só uma vez
+  });
+</script>
+
+
+  
+
+<!--Formulario de pacote-->
+<script>
+  // Função para abrir o modal e preencher o nome do pacote
+document.addEventListener('DOMContentLoaded', function() {
+  const modalFormulario = document.getElementById('modalFormulario');
+  const pacoteInput = document.getElementById('pacote');
+  const pacoteSelecionadoSpan = document.getElementById('pacote-selecionado');
+
+  // Adiciona um listener para todos os botões que abrem o modal
+  const botoesPacotes = document.querySelectorAll('[data-bs-target="#modalFormulario"]');
+  
+  botoesPacotes.forEach(botao => {
+    botao.addEventListener('click', function() {
+      // Pega o valor do atributo 'data-pacote' do botão clicado
+      const nomePacote = this.getAttribute('data-pacote');
+      
+      // 1. Preenche o campo oculto do formulário
+      pacoteInput.value = nomePacote;
+      
+      // 2. Preenche o título do modal para confirmação visual do cliente
+      pacoteSelecionadoSpan.textContent = nomePacote;
+    });
+  });
+});
+</script>
+</body>
+</html>
